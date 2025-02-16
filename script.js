@@ -56,7 +56,8 @@ noButton.addEventListener("click", function (event) {
     if (clickCount === 4) mainImage.src = "images/crying.png";
     if (clickCount >= 5) mainImage.src = "images/crying.png";
 
-    createHeart(event.clientX, event.clientY);
+    // 删除这行代码，避免点击“不要”按钮时出现红心
+    // createHeart(event.clientX, event.clientY);
 });
 
 yesButton.addEventListener("click", function () {
